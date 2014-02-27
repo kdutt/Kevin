@@ -10,7 +10,7 @@
         <a href="cat.php">--categories</a><br />
         <br /><br />
         --stats?<br />
-    Hi
+    Hi asdf
     <a href="pages.php">Page</a>
     <?php
         $mypage = new page();

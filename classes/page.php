@@ -4,7 +4,9 @@ require_once("../classes/includes.php");
 class page
 {
     private $id = 0;
-    public $name = "";
+    
+    private $name = "";
+    private $mycat;
     private $categories = array();
 
     public function __construct()
@@ -15,6 +17,8 @@ class page
     {
         $this->id = $myPageId;
         $this->name = "loadpage";
+        
+        $this->categories = new cats();
     }
     
     public function save()
@@ -24,6 +28,18 @@ class page
     public function getId()
     {
         return $this->id;
+    }
+    public function getCats()
+    {
+        return $this->categories;
+    }
+    public function getName()
+    {
+        return $this->name;
+    }
+    public function setName($newName)
+    {
+        $this->name = $newName;
     }
 }
 

@@ -15,10 +15,15 @@
     <?php
         $mypage = new page();
         $mypage->load(1);
-        $mypage->name = "test";
+        $mypage->setName("test");
         
         printf($mypage->getId());
-        printf($mypage->name);
+        printf($mypage->getName());
+        
+        foreach($mypage->getCats() as $mycat)
+        {
+            echo $mycat->getname() + "<br />";
+        }
     ?>
 </body>
 </html>

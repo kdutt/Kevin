@@ -1,6 +1,6 @@
 <?php
 	require_once("../classes/page.php");
-	//require_once("../classes/category.php");
+        require_once("../classes/category.php");
 	
 	$server = "localhost";
 	$user = "root";

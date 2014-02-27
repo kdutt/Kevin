@@ -15,7 +15,9 @@
     <?php
         $mypage = new page();
         $mypage->get(1);
-        printf($mypage->id);
+        printf($mypage->getId());
+        $mypage->name = "test";
+        printf($mypage->name);
     ?>
 </body>
 </html>

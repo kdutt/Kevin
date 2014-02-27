@@ -1,8 +1,6 @@
 <?php
 	require_once("../classes/includes.php");
 	
-	$myPage;
-	
 	//if (isset($_GET["pageid"]) || !empty($_GET["pageid"])) {
 		//$myPage = new page($_GET["pageid"]);
 	//}

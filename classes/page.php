@@ -3,15 +3,15 @@ require_once("../classes/includes.php");
 
 class page
 {
-    protected $id = 0;
-    private $name = "";
+    private $id = 0;
+    public $name = "";
     private $categories = array();
 
     public function __construct()
     {
         
     }
-    public function get($myPageId)
+    public function load($myPageId)
     {
         $this->id = $myPageId;
         $this->name = "loadpage";
@@ -20,6 +20,10 @@ class page
     public function save()
     {
         
+    }
+    public function getId()
+    {
+        return $this->id;
     }
 }
 

@@ -25,7 +25,7 @@ class cats
 }
 class cat
 {
-    private $catId = 0;
+    private $catId = 1;
     private $name = "";
 
     public function __construct()

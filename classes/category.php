@@ -16,6 +16,7 @@ class cats
         $cat3->changeName("cat3");
         
         $this->catarray = array($cat1, $cat2, $cat3);
+        
         return $this->catarray;
     }
     public function getCat($num)

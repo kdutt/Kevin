@@ -19,6 +19,7 @@ class page
         $this->name = "loadpage";
         
         $this->categories = new cats();
+        echo "we get here";
     }
     
     public function save()

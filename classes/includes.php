@@ -1,5 +1,4 @@
 <?php
-	require_once("../classes/adodb5/adodb.inc.php");
 	require_once("../classes/page.php");
 	//require_once("../classes/category.php");
 	

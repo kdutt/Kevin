@@ -16,6 +16,7 @@
         $mypage = new page();
         $mypage->get(1);
         echo $mypage->id;
+        echo "test";
     ?>
 </body>
 </html>

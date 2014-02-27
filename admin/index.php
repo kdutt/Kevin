@@ -13,6 +13,7 @@
     Hi asdf
     <a href="pages.php">Page</a>
     <?php
+    printf("test");
         $mypage = new page();
         $mypage->get(1);
         printf($mypage->id);

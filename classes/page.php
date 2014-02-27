@@ -3,7 +3,7 @@ require_once("../classes/includes.php");
 
 class page
 {
-    protected $id = 0;
+    private $id = 0;
     public $name = "";
     private $categories = array();
 

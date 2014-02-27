@@ -10,12 +10,13 @@
         <a href="cat.php">--categories</a><br />
         <br /><br />
         --stats?<br />
-    Hi asdf
+    Hi
     <a href="pages.php">Page</a>
     <?php
         $mypage = new page();
         $mypage->load(1);
         $mypage->name = "test";
+        
         printf($mypage->getId());
         printf($mypage->name);
     ?>

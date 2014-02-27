@@ -17,8 +17,6 @@ class page
     {
         $this->id = $myPageId;
         $this->name = "loadpage";
-        
-        $this->categories = new cats(1);
     }
     
     public function save()

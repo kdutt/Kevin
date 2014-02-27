@@ -19,7 +19,6 @@
         
         printf($mypage->getId());
         printf($mypage->getName());
-
     ?>
 </body>
 </html>

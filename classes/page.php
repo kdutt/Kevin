@@ -23,7 +23,7 @@ class page
     }
     public function getId()
     {
-        return $this->id;
+        return "$this->id;";
     }
 }
 

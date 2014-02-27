@@ -20,7 +20,7 @@
         printf($mypage->getId());
         printf($mypage->getName());
         
-        foreach($mypage->getCats() as $mycat)
+        foreach($mypage->getCats(1) as $mycat)
         {
             echo $mycat->getname() + "<br />";
         }

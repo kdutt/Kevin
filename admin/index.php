@@ -20,15 +20,9 @@
         printf($mypage->getId());
         printf($mypage->getName());
         
-        $myarry = new $mypage->getCats(1);
-        
-        echo "ok";
-        echo $myarry->getCat(1);
-        
-        echo "test";
-        
-        foreach($myarry as $mycat)
+        foreach($mypage->getCats() as $mycat)
         {
+            
             echo $mycat->getname() + "<br />";
         }
     ?>

@@ -5,13 +5,12 @@ require_once("../classes/includes.php");
 class cats
 {
     private $catarray = array();
-    public function __construct($id) {
+    public static function __construct($id) {
         
         $cat1 = new cat();
         $cat2 = new cat();
         $cat3 = new cat();
         
-        echo "we get here too";
         $cat1->changeName("cat1");
         $cat2->changeName("cat2");
         $cat3->changeName("cat3");
@@ -19,10 +18,6 @@ class cats
         $this->catarray = array($cat1, $cat2, $cat3);
         
         return $this->catarray;
-    }
-    public function getCat($num)
-    {
-        return $this->catarray[$num];
     }
 }
 class cat

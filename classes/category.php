@@ -11,6 +11,7 @@ class cats
         $cat2 = new cat();
         $cat3 = new cat();
         
+        echo "we get here too";
         $cat1->changeName("cat1");
         $cat2->changeName("cat2");
         $cat3->changeName("cat3");

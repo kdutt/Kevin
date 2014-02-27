@@ -3,11 +3,8 @@ require_once("../classes/includes.php");
 
 class page
 {
-    private $id = 0;
-    
+    private $id = 0;    
     private $name = "";
-    private $mycat;
-    private $categories = array();
 
     public function __construct()
     {
@@ -27,14 +24,12 @@ class page
     {
         return $this->id;
     }
-    public function getCats()
-    {
-        return $this->categories;
-    }
+    
     public function getName()
     {
         return $this->name;
     }
+    
     public function setName($newName)
     {
         $this->name = $newName;

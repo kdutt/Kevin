@@ -18,6 +18,10 @@ class cats
         $this->catarray = array($cat1, $cat2, $cat3);
         return $this->catarray;
     }
+    public function getCat($num)
+    {
+        return $this->catarray[$num];
+    }
 }
 class cat
 {

@@ -14,9 +14,9 @@
     <a href="pages.php">Page</a>
     <?php
         $mypage = new page();
-        $mypage->get(1);
-        echo $mypage::getId();
+        $mypage->load(1);
         $mypage->name = "test";
+        printf($mypage->getId());
         printf($mypage->name);
     ?>
 </body>

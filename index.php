@@ -1,3 +1,7 @@
+<?php
+        require_once("classes/page.php");
+        require_once("classes/db.php");
+?>
 <html>
 <head>
 </head>
@@ -6,22 +10,21 @@ Hello World!
 a change
 asdf
 <?php echo "hi" ?>
+<a href="/admin/index.php">Admin</a>
+test
 <?php
-
-class testclass
-{
-    var $test = "asdf";
-    function rename()
+    $dbh = new dbhelper();
+    
+    if($dbh->isConnected())
     {
-        $this->test = "rename";
+        echo "true";
     }
-}
-
-$newtest = new testclass();
-
-$newtest->rename();
-$newtest->test = "hi";
-
+    else
+    {
+        echo "false";
+    }
+    
+    
 ?>
 </body>
 </html>

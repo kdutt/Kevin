@@ -1,6 +1,4 @@
 <?php
-require_once("../classes/includes.php");
-
 class page
 {
     private $id = 0;    

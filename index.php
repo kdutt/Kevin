@@ -10,7 +10,7 @@ Hello World!
 a change
 asdf
 <?php echo "hi" ?>
-<a href="/admin/index.php">Admin</a>
+<a href="admin/index.php">Admin</a>
 test
 <?php
     $dbh = new dbhelper();

@@ -10,6 +10,9 @@ class dbhelper
     public function __construct() {
         $this->connection = mysqli_connect($this->host, $this->user, $this->password, $this->database);
     }
+    public function __destruct() {
+        mysqli_close($this->connection);
+    }
     
     public function isConnected()
     {
@@ -18,6 +21,23 @@ class dbhelper
            return false ;
         }
         return true;
+    }
+    
+    public function select($sql)
+    {
+        
+    }
+    public function insert($sql)
+    {
+        if($this->isConnected())
+        {
+            mysqli_query($this->connection, $sql);
+            return mysqli_insert_id($this->connection);
+        }
+    }
+    public function update($sql)
+    {
+        
     }
 }
 ?>

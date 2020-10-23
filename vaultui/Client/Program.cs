@@ -27,7 +27,7 @@ namespace vaultui.Client
             builder.Services.AddMsalAuthentication(options =>
             {
                 builder.Configuration.Bind("AzureAd", options.ProviderOptions.Authentication);
-                options.ProviderOptions.DefaultAccessTokenScopes.Add("api://api://673190a4-b5fe-4df8-8b44-4c02586b5b28/API.Access");
+                options.ProviderOptions.DefaultAccessTokenScopes.Add("api://673190a4-b5fe-4df8-8b44-4c02586b5b28/API.Access");
             });
 
             await builder.Build().RunAsync();
